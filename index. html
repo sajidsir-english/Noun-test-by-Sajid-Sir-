@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MDCAT CRACK - English Noun Test</title>
+<style>
+body{font-family:Arial;background:#6a4cff;margin:0;padding:12px;color:white;text-align:center}
+.box{background:white;color:black;border-radius:20px;padding:18px;text-align:left;max-width:650px;margin:auto}
+input[type=text]{width:95%;padding:12px;margin:8px 0;border-radius:10px;border:1px solid #ccc}
+button{background:#22c55e;color:white;padding:15px;border:none;border-radius:12px;width:100%;font-size:19px;margin-top:15px;font-weight:bold}
+.q{margin:18px 0 5px;font-weight:bold}
+label{display:block;background:#f1f5f9;padding:10px;border-radius:10px;margin:5px 0}
+.top{background:#111827;padding:12px;border-radius:15px;margin-bottom:12px;color:white}
+</style>
+</head>
+<body>
+<h2>MDCAT CRACK - Mock Test</h2>
+<p>Subject: English - Noun & Types of Noun | Total MCQs: 45</p>
+<div class="box">
+<div class="top">اپنا نام اور نمبر لازمی لکھیں</div>
+<input type="text" id="name" placeholder="Apna Naam Likhen">
+<input type="text" id="num" placeholder="WhatsApp Number Likhen">
+
+<div id="quiz"></div>
+<button onclick="check()">Submit Test - Result Dekhen</button>
+<h2 id="result" style="text-align:center;color:green"></h2>
+<div id="review"></div>
+</div>
+<script>
+const data=[
+["Which of the following is a Proper Noun?",["City","Karachi","Boy","School"],1],
+["Which of the following is a Common Noun?",["Ali","Pakistan","Teacher","Lahore"],2],
+["'Honesty is the best policy.' The word Honesty is:",["Proper Noun","Abstract Noun","Collective Noun","Material Noun"],1],
+["Which one is a Collective Noun?",["Team","Book","Pen","Water"],0],
+["'The flock of birds is flying.' Flock is:",["Abstract Noun","Collective Noun","Proper Noun","Common Noun"],1],
+["Which one is a Material Noun?",["Gold","Happiness","Class","Army"],0],
+["'She bought a bouquet of flowers.' Bouquet is:",["Collective Noun","Proper Noun","Abstract Noun","Countable Noun"],0],
+["Which one is an Abstract Noun?",["Table","Chair","Bravery","Dog"],2],
+["Which one is a Countable Noun?",["Water","Rice","Apple","Milk"],2],
+["Which one is an Uncountable Noun?",["Chair","Sugar","Pen","Student"],1],
+["Choose the correct Plural: Child",["Childs","Children","Childes","Childrens"],1],
+["Choose the correct Plural: Woman",["Womans","Women","Womens","Womanes"],1],
+["'The army marched forward.' Army is:",["Proper Noun","Collective Noun","Material Noun","Abstract Noun"],1],
+["Which is a Compound Noun?",["Blackboard","Beautiful","Quickly","Run"],0],
+["'His kindness impressed everyone.' Kindness is:",["Material Noun","Abstract Noun","Collective Noun","Proper Noun"],1],
+["Which one is NOT a Proper Noun?",["Sunday","Quran","River","Indus River"],2],
+["'A crowd gathered in the ground.' Crowd is:",["Collective Noun","Abstract Noun","Common Noun","Material Noun"],0],
+["The plural of 'Knife' is:",["Knifes","Knives","Knifees","Knifess"],1],
+["The plural of 'Tooth' is:",["Tooths","Teeth","Teeths","Toothes"],1],
+["Which sentence has an Abstract Noun?",["The dog is barking.","Love conquers all.","I have a pen.","He is a boy."],1],
+["'The jury gave its verdict.' Jury is:",["Proper Noun","Collective Noun","Abstract Noun","Material Noun"],1],
+["Which one is a Material Noun?",["Iron","School","Teacher","Happiness"],0],
+["Choose the Correct Possessive: The book of Ali",["Alis book","Ali's book","Alis' book","Ali book"],1],
+["'The committee has decided.' Here committee is used as:",["Plural","Singular Collective","Abstract","Proper"],1],
+["Which one is an Abstract Noun made from Adjective 'Brave'?",["Brave","Bravery","Bravely","Bravest"],1],
+["Which one is a Noun Phrase?",["In the morning","The very tall boy","Run fast","He is good"],1],
+["'The rich should help the poor.' Here 'rich' is used as:",["Adjective","Noun","Verb","Adverb"],1],
+["Which is a Gerund acting as Noun?",["Swimming is good for health.","He is swimming.","She swims.","They swam."],0],
+["'I need a glass of water.' Water is:",["Countable","Uncountable","Collective","Proper"],1],
+["Choose the correct one:",["Many informations","Much information","Many information","A few informations"],1],
+["Plural of 'Sheep' is:",["Sheeps","Sheep","Sheepes","Sheepses"],1],
+["'The police are coming.' Police is:",["Singular","Plural Collective","Abstract","Material"],1],
+["Which one is a Concrete Noun?",["Love","Table","Truth","Anger"],1],
+["'Childhood is golden.' Childhood is:",["Proper Noun","Abstract Noun","Collective Noun","Material Noun"],1],
+["Noun form of 'Decide' is:",["Deciding","Decision","Decisive","Decided"],1],
+["Noun form of 'Strong' is:",["Strongly","Strength","Stronger","Strongest"],1],
+["'He is a man of wisdom.' Wisdom is:",["Abstract Noun","Collective Noun","Proper Noun","Common Noun"],0],
+["Which sentence is correct?",["The furnitures are new.","The furniture is new.","The furnitures is new.","A furniture are new."],1],
+["'A gang of thieves was caught.' Gang is:",["Collective Noun","Proper Noun","Abstract Noun","Material Noun"],0],
+["Which one is NOT a Collective Noun?",["Herd","Bundle","Class","Happiness"],3],
+["'The earth revolves around the sun.' Earth is:",["Common Noun","Proper Noun","Abstract Noun","Collective Noun"],1],
+["Plural of 'Phenomenon' is:",["Phenomenons","Phenomena","Phenomenas","Phenomenones"],1],
+["'He gave me a piece of advice.' Advice is:",["Countable","Uncountable","Collective","Proper"],1],
+["Choose the correct Possessive for plural: Girls' school",["Girl's school","Girls's school","Girls' school","Girls school"],2],
+["'Truth and honesty are virtues.' How many Abstract Nouns are there?",["1","2","3","0"],2],
+];
+let html="";
+data.forEach((q,i)=>{
+html+=`<div class="q">${i+1}. ${q[0]}</div>`;
+q[1].forEach((opt,j)=>{
+html+=`<label><input type="radio" name="q${i}" value="${j}"> ${["A","B","C","D"][j]}) ${opt}</label>`;
+});
+});
+document.getElementById('quiz').innerHTML=html;
+function check(){
+let score=0; let rev="<h3>Review:</h3>";
+data.forEach((q,i)=>{
+let v=document.querySelector('input[name="q'+i+'"]:checked');
+let got=v?parseInt(v.value):-1;
+if(got===q[2]) score++;
+rev+=`<p>${i+1}. Correct: ${["A","B","C","D"][q[2]]}) ${q[1][q[2]]} - Aapka: ${got===-1?"No Answer":(["A","B","C","D"][got])} ${got===q[2]?"✅":"❌"}</p>`;
+});
+let name=document.getElementById('name').value||"Student";
+document.getElementById('result').innerHTML="Shabash "+name+"! <br> Marks: "+score+" / 45";
+document.getElementById('review').innerHTML=rev;
+window.scrollTo(0,0);
+alert("Mubarak ho "+name+"! Marks: "+score+" / 45");
+}
+</script>
+</body>
+</html>
